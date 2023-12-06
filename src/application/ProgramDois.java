@@ -29,6 +29,12 @@ public class ProgramDois {
 		Department newDepartment = new Department(null, "Desenvolvimento");
 		departmentDao.insert(newDepartment);
 		System.out.println("Inserted! New id = " + newDepartment.getId());
+		
+		System.out.println("=== TEST 4: update =======");
+		dep = departmentDao.findById(3);
+		dep.setName("Personalização");
+		departmentDao.update(dep);
+		System.out.println("Update completed");
 
 		sc.close();		
 	}
