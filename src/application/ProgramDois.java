@@ -25,5 +25,11 @@ public class ProgramDois {
 		}
 		
 		sc.close();
+		
+		System.out.println();
+		System.out.println("=== TEST 1: insert =======");
+		Department newDepartment = new Department(null, "Desenvolvimento");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted! New id = " + newDepartment.getId());
 	}
 }
