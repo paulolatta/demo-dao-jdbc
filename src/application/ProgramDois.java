@@ -24,12 +24,12 @@ public class ProgramDois {
 			System.out.println(obj);
 		}
 		
-		sc.close();
-		
 		System.out.println();
-		System.out.println("=== TEST 1: insert =======");
+		System.out.println("=== TEST 3: insert =======");
 		Department newDepartment = new Department(null, "Desenvolvimento");
 		departmentDao.insert(newDepartment);
 		System.out.println("Inserted! New id = " + newDepartment.getId());
+
+		sc.close();		
 	}
 }
